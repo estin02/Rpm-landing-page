@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Barlow';
+    height: 100vh;
+    width: 100wh;
+}
+
+.container {
+    scroll-snap-type: both mandatory;
+    /* IMP */
+    overflow: scroll;
+    /* IMP */
+    height: 100vh;
+    /* IMP */
+    display: flex;
+    flex-direction: column;
+}
+
+.one,
+.two {
+    scroll-snap-align: start;
+}
+
+
+/* Header */
+
+.social-media-icons,
+.left-logo-divider,
+.right-logo-divider,
+nav,
+.slider-button {
+    display: none;
+}
+
+.one {
+    margin: 0;
+    height: 100vh;
+    width: 100wh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.one {
+    background-image: url("images/mob-nav.jpg");
+}
+
+.one-two {
+    width: 100wh;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.site-logo {
+    width: 100wh;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin-top: 2rem;
+}
+
+.logo img {
+    height: 9rem;
+}
+
+.header-heading {
+    width: 100wh;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 22rem);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-heading h1 {
+    margin-bottom: -.4rem;
+    font-size: 7.5rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 100%;
+    letter-spacing: 0.02em
+}
+
+.header-heading p {
+    margin: -.4rem;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: .8rem;
+    line-height: 141.9%;
+    letter-spacing: 0.205em;
+}
+
+.heading-yellow {
+    color: #F5CE42;
+}
+
+.heading-white {
+    color: #FFFFFF;
+}
+
+
+/* Events */
+
+.two {
+    flex: none;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/events.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-body {
+    width: 18rem;
+    padding: 1rem 1.5rem;
+    height: auto;
+    color: #FFFFFF;
+    background: rgba(40, 4, 4, 0.49);
+}
+
+.event-heading {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 100%;
+    /* or 36px */
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding: .9rem;
+}
+
+.event-content {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding-bottom: 1rem;
+}
