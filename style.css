@@ -15,9 +15,9 @@ body {
 }
 
 .container {
-    scroll-snap-type: both mandatory;
+    scroll-snap-type: y mandatory;
     /* IMP */
-    overflow: scroll;
+    overflow-y: scroll;
     /* IMP */
     height: 100vh;
     /* IMP */
@@ -29,13 +29,13 @@ body {
 .two,
 .three,
 .footer {
-    scroll-snap-align: start;
+    scroll-snap-align: end;
 }
 
 
 /* Header */
 
-.social-media-icons,
+.nav-social-media-icons,
 .left-logo-divider,
 .right-logo-divider,
 nav,
@@ -247,4 +247,199 @@ nav,
     text-align: center;
     letter-spacing: 0.02em;
     color: #000000;
+}
+
+
+/* Footer */
+
+.footer {
+    flex: none;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 4.625rem;
+}
+
+.form {
+    width: 16rem;
+    height: 2.25rem;
+    background: #EEEEEE;
+    border-radius: 5.77982px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-email-logo {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+}
+
+.form-email-logo img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.form-email-input {
+    height: 1.5rem;
+    margin-right: 2rem;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 141.9%;
+    text-align: center;
+    letter-spacing: 0.02em
+}
+
+.submit-button {
+    width: 5rem;
+    height: 1.5rem;
+    background: #C2A743;
+    border-radius: 5.77982px;
+    text-align: center;
+}
+
+.submit-button p {
+    padding: 4px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: .75rem;
+    line-height: 141.9%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.sitemap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sitemap-heading {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 141.9%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #C3A743;
+}
+
+.sitemap-items {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 141.9%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.contact-info {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-heading {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 141.9%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #C3A743;
+}
+
+.contact-phone,
+.contact-mail {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.phone-logo,
+.mail-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-body,
+.mail-body {
+    text-decoration: none;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 141.9%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.social-media {
+    height: 1.7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -2rem;
+}
+
+.horizontal-divider {
+    height: 1px;
+    width: 85%;
+    background-color: #FFFFFF;
+}
+
+.social-media-icons {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media-icons img {
+    height: .9rem;
+    width: auto;
+}
+
+.copyright {
+    flex: none;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9.30168px;
+    line-height: 141.9%;
+    /* identical to box height, or 13px */
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
 }
